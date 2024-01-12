@@ -50,7 +50,9 @@ class displayMap():
 
 
         original_texture = Image.open('earth.jpg')
-        resized_texture = original_texture.resize((512, 256), Image.ANTIALIAS)
+        #resized_texture = original_texture.resize((512, 256), Image.ANTIALIAS)
+
+        resized_texture = original_texture.resize((512, 256))
         texture = np.asarray(resized_texture).T
 
         colorscale =[[0.0, 'rgb(30, 59, 117)'],

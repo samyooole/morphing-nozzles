@@ -8,7 +8,7 @@ def main():
 
     Map = displayMap(x,u,t)
 
-    st.set_page_config(layout='wide')
+    st.set_page_config(page_title='Optimal control of orbital path', layout='wide')
     fig = Map.generate_visuals()
 
     st.plotly_chart(fig,use_container_width=True,height=800)
